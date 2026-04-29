@@ -29,8 +29,8 @@ export default function FeaturedSpotlight() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl mb-6">
-            Your Future <br /> Starts Here.
+          <h2 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl mb-6 uppercase tracking-tighter">
+            Exclusive <br /> Pre-construction.
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center text-lg md:text-xl font-normal text-neutral-300 leading-relaxed">
             Whether you&apos;re looking for a luxury estate in Credit Valley or a modern loft in Toronto, 

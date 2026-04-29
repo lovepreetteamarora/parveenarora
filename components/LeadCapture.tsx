@@ -45,31 +45,31 @@ export default function LeadCapture() {
             </p>
           </div>
 
-          <form className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <form className="space-y-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <label className="block text-xs uppercase tracking-widest font-bold text-slate-500 mb-2">First Name *</label>
+                <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400 mb-1.5 ml-1">First Name *</label>
                 <input type="text" className="w-full bg-slate-50 border-gray-200 border px-4 py-3 text-slate-900 rounded-sm focus:ring-2 focus:ring-[#000000] focus:border-[#000000] outline-none transition-all" placeholder="John" required />
               </div>
               <div>
-                <label className="block text-xs uppercase tracking-widest font-bold text-slate-500 mb-2">Last Name *</label>
+                <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400 mb-1.5 ml-1">Last Name *</label>
                 <input type="text" className="w-full bg-slate-50 border-gray-200 border px-4 py-3 text-slate-900 rounded-sm focus:ring-2 focus:ring-[#000000] focus:border-[#000000] outline-none transition-all" placeholder="Doe" required />
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <label className="block text-xs uppercase tracking-widest font-bold text-slate-500 mb-2">Email Address *</label>
+                <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400 mb-1.5 ml-1">Email Address *</label>
                 <input type="email" className="w-full bg-slate-50 border-gray-200 border px-4 py-3 text-slate-900 rounded-sm focus:ring-2 focus:ring-[#000000] focus:border-[#000000] outline-none transition-all" placeholder="john@example.com" required />
               </div>
               <div>
-                <label className="block text-xs uppercase tracking-widest font-bold text-slate-500 mb-2">Phone Number *</label>
+                <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400 mb-1.5 ml-1">Phone Number *</label>
                 <input type="tel" className="w-full bg-slate-50 border-gray-200 border px-4 py-3 text-slate-900 rounded-sm focus:ring-2 focus:ring-[#000000] focus:border-[#000000] outline-none transition-all" placeholder="(555) 123-4567" required />
               </div>
             </div>
 
             <div>
-              <label className="block text-xs uppercase tracking-widest font-bold text-slate-500 mb-2">Property Address *</label>
+              <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400 mb-1.5 ml-1">Property Address *</label>
               <input type="text" className="w-full bg-slate-50 border-gray-200 border px-4 py-3 text-slate-900 rounded-sm focus:ring-2 focus:ring-[#000000] focus:border-[#000000] outline-none transition-all" placeholder="123 Main St, Brampton, ON" required />
             </div>
 

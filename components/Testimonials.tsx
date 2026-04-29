@@ -141,10 +141,10 @@ export default function Testimonials() {
                       />
                     </div>
                     <div>
-                      <p className="text-lg font-bold text-slate-900 tracking-tight">
+                      <p className="text-lg font-black text-slate-900 tracking-tight">
                         {reviews[currentIndex].author}
                       </p>
-                      <p className="text-xs text-slate-400 font-bold uppercase tracking-widest mt-1">
+                      <p className="text-[10px] text-slate-400 font-bold uppercase tracking-[0.2em] mt-1.5">
                         {reviews[currentIndex].location}
                       </p>
                     </div>

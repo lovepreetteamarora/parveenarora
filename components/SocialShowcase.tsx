@@ -57,15 +57,8 @@ export default function SocialShowcase() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center gap-3 mb-6 bg-[#E01A2C]/10 border border-[#E01A2C]/20 px-4 py-2 rounded-full"
-          >
-            <div className="w-2 h-2 bg-[#E01A2C] rounded-full animate-pulse shadow-[0_0_10px_#3b82f6]"></div>
+            <div className="w-2 h-2 bg-[#E01A2C] rounded-full animate-pulse shadow-[0_0_10px_rgba(224,26,44,0.5)]"></div>
             <span className="text-[#E01A2C] font-bold tracking-[0.2em] uppercase text-[10px]">Live Digital Impact</span>
-          </motion.div>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -113,7 +106,7 @@ export default function SocialShowcase() {
         </div>
 
         {/* Video Embed Hub */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 md:gap-20">
           {mounted ? (
             socialPosts.map((post, i) => (
               <motion.div
@@ -134,11 +127,11 @@ export default function SocialShowcase() {
                 />
                 
                 {/* View Count Overlay (Floating) */}
-                <div className="mt-6 bg-white text-slate-950 px-6 py-2 rounded-2xl flex items-center gap-3 shadow-2xl transition-transform group-hover:scale-105">
+                <div className="mt-8 bg-white text-slate-950 px-8 py-2.5 rounded-2xl flex items-center gap-3 shadow-2xl transition-transform group-hover:scale-105 border border-slate-100">
                   <div className="w-2 h-2 bg-[#E01A2C] rounded-full animate-pulse shadow-[0_0_8px_rgba(220,38,38,0.8)]"></div>
-                  <span className="text-xs font-bold tracking-widest uppercase">{post.views} VIEWS</span>
+                  <span className="text-[10px] font-bold tracking-[0.2em] uppercase">{post.views} VIEWS</span>
                 </div>
-                <h4 className="mt-4 text-slate-600 font-bold uppercase text-[10px] tracking-widest">{post.title}</h4>
+                <h4 className="mt-6 text-slate-400 font-bold uppercase text-[9px] tracking-[0.2em]">{post.title}</h4>
               </motion.div>
             ))
           ) : (
@@ -156,7 +149,7 @@ export default function SocialShowcase() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-3 px-8 py-4 bg-white text-slate-950 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-blue-600 hover:text-white transition-all shadow-xl"
+            className="flex items-center gap-3 px-8 py-4 bg-white text-slate-950 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-[#E01A2C] hover:text-white transition-all shadow-xl"
           >
             <Instagram className="w-4 h-4" /> Follow Instagram
           </motion.a>
