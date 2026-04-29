@@ -6,22 +6,22 @@ import { cn } from "@/lib/utils";
 const gotham = localFont({
   src: [
     {
-      path: '../public/fonts/Gotham-Book.otf',
+      path: './fonts/Gotham-Book.otf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../public/fonts/Gotham-Medium.otf',
+      path: './fonts/Gotham-Medium.otf',
       weight: '500',
       style: 'normal',
     },
     {
-      path: '../public/fonts/Gotham-Bold.otf',
+      path: './fonts/Gotham-Bold.otf',
       weight: '700',
       style: 'normal',
     },
     {
-      path: '../public/fonts/Gotham-Black.otf',
+      path: './fonts/Gotham-Black.otf',
       weight: '900',
       style: 'normal',
     },
@@ -32,12 +32,12 @@ const gotham = localFont({
 const nyght = localFont({
   src: [
     {
-      path: '../public/fonts/NyghtSerif-Regular.woff2',
+      path: './fonts/NyghtSerif-Regular.woff2',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../public/fonts/NyghtSerif-Bold.woff2',
+      path: './fonts/NyghtSerif-Bold.woff2',
       weight: '700',
       style: 'normal',
     },
@@ -48,7 +48,7 @@ const nyght = localFont({
 const aston = localFont({
   src: [
     {
-      path: '../public/fonts/Aston-Script.ttf',
+      path: './fonts/Aston-Script.ttf',
       weight: '400',
       style: 'normal',
     },
@@ -59,12 +59,12 @@ const aston = localFont({
 const monument = localFont({
   src: [
     {
-      path: '../public/fonts/MonumentExtended-Regular.otf',
+      path: './fonts/MonumentExtended-Regular.otf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../public/fonts/MonumentExtended-Ultrabold.otf',
+      path: './fonts/MonumentExtended-Ultrabold.otf',
       weight: '800',
       style: 'normal',
     },
@@ -75,17 +75,17 @@ const monument = localFont({
 const appleGaramond = localFont({
   src: [
     {
-      path: '../public/fonts/AppleGaramond.ttf',
+      path: './fonts/AppleGaramond.ttf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../public/fonts/AppleGaramond-Bold.ttf',
+      path: './fonts/AppleGaramond-Bold.ttf',
       weight: '700',
       style: 'normal',
     },
     {
-      path: '../public/fonts/AppleGaramond-Italic.ttf',
+      path: './fonts/AppleGaramond-Italic.ttf',
       weight: '400',
       style: 'italic',
     },
@@ -96,7 +96,7 @@ const appleGaramond = localFont({
 const rocGrotesk = localFont({
   src: [
     {
-      path: '../public/fonts/RocGrotesk-Black.otf',
+      path: './fonts/RocGrotesk-Black.otf',
       weight: '900',
       style: 'normal',
     },
