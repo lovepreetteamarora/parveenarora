@@ -11,6 +11,7 @@ const regions = [
     description: 'Specializing in high-demand residential areas with top-tier schooling and rapid community development.',
     image: '/thumbnails/brampton.jpg',
     stats: 'Highest Sales Volume',
+    link: 'https://www.teamarora.com/house-for-sale-in-brampton/',
   },
   {
     name: 'Mississauga',
@@ -18,20 +19,23 @@ const regions = [
     description: 'Expertise in luxury homes and prime accessible locations. Recognized as a Best Real Estate Agent in Mississauga.',
     image: '/thumbnails/mississauga.jpg',
     stats: 'Top Rated Agent 2023',
+    link: 'https://www.teamarora.com/homes-for-sale-mississauga/',
   },
   {
     name: 'Cambridge',
-    specialty: 'Halton Hills',
-    description: 'Deep local knowledge in Cambridge and surrounding Halton Hills, securing premium value for detached homes.',
-    image: '/thumbnails/halton-hills.jpg',
+    specialty: 'West Galt',
+    description: 'Strategic market positioning in Cambridge, securing premium value for detached homes and investment properties.',
+    image: '/thumbnails/toronto.jpg', // Temporarily using toronto image or I can use a placeholder
     stats: 'Expanding Market Leader',
+    link: 'https://www.teamarora.com/house-for-sale-in-cambridge/',
   },
   {
-    name: 'Toronto',
-    specialty: 'Downtown Core',
-    description: 'Specialized strategies for the high-velocity Toronto market, from luxury condos to historic freehold properties.',
-    image: '/thumbnails/toronto.jpg',
-    stats: 'Global Investment Hub',
+    name: 'Halton Hills',
+    specialty: 'Georgetown',
+    description: 'Deep local knowledge in Halton Hills and surrounding areas, focusing on community-driven growth and value.',
+    image: '/thumbnails/halton-hills.jpg',
+    stats: 'High Demand Growth',
+    link: 'https://www.teamarora.com/house-for-sale-halton-hills/',
   },
 ];
 
@@ -74,9 +78,14 @@ export default function Neighborhoods() {
                     <h3 className="text-3xl font-serif font-bold text-white mb-1">{region.name}</h3>
                     <p className="text-[#E01A2C] font-bold uppercase tracking-widest text-[10px]">Focus: {region.specialty}</p>
                   </div>
-                  <div className="bg-[#000000] p-3 rounded-full text-white">
+                  <Link 
+                    href={region.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="bg-[#000000] p-3 rounded-full text-white hover:bg-[#E01A2C] transition-colors shadow-lg"
+                  >
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </div>
+                  </Link>
                 </div>
               </div>
               <div className="p-8">
@@ -85,7 +94,12 @@ export default function Neighborhoods() {
                 </p>
                 <div className="pt-6 border-t border-gray-100 flex justify-between items-center">
                   <span className="text-xs font-bold text-slate-900 uppercase tracking-widest">{region.stats}</span>
-                  <Link href={`#${region.name.toLowerCase()}`} className="text-[#E01A2C] uppercase text-xs font-bold tracking-widest hover:text-[#000000] transition-colors flex items-center gap-1">
+                  <Link 
+                    href={region.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-[#E01A2C] uppercase text-xs font-bold tracking-widest hover:text-[#000000] transition-colors flex items-center gap-1"
+                  >
                     Explore Listings
                   </Link>
                 </div>
