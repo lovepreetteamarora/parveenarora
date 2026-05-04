@@ -121,6 +121,7 @@ export default function Media() {
             src="https://picsum.photos/seed/remax-studio/1600/900"
             alt="Team Arora YouTube Banner"
             fill
+            sizes="(max-width: 1200px) 100vw, 1200px"
             referrerPolicy="no-referrer"
             className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-1000"
           />
@@ -153,6 +154,7 @@ export default function Media() {
                 src={`https://picsum.photos/seed/parveen${idx}/400/700`}
                 alt={video.title}
                 fill
+                sizes="(max-width: 768px) 50vw, 25vw"
                 referrerPolicy="no-referrer"
                 className="object-cover opacity-60 group-hover:opacity-40 group-hover:scale-110 transition-all duration-700"
               />

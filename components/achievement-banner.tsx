@@ -37,7 +37,7 @@ export function AchievementBanner() {
                 <div className="flex items-center gap-3 bg-slate-900/[0.03] border border-slate-900/5 px-4 py-2 rounded-full w-fit">
                   <span className="text-[10px] font-sans font-bold tracking-[0.3em] text-[#E01A2C] uppercase">Career Achievement</span>
                   <span className="w-1 h-1 bg-slate-300 rounded-full"></span>
-                  <span className="text-[10px] font-sans font-bold tracking-[0.2em] text-slate-600 uppercase">4,500+ Transactions</span>
+                  <span className="text-[10px] font-sans font-bold tracking-[0.2em] text-slate-600 uppercase">5,000+ Transactions</span>
                 </div>
                 
                 <h2 className="text-6xl md:text-[80px] font-sans font-black text-slate-900 leading-[0.95] tracking-tighter">
@@ -99,6 +99,7 @@ export function AchievementBanner() {
                 src="/parveen.png" 
                 alt="Parveen Arora" 
                 fill 
+                sizes="(max-width: 768px) 300px, (max-width: 1024px) 450px, 480px"
                 className="object-contain object-bottom"
                 priority
               />

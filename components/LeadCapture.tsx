@@ -37,13 +37,18 @@ export default function LeadCapture() {
         return;
       }
 
-      const response = await fetch(SCRIPT_URL, {
+      const formDataParams = new URLSearchParams();
+      Object.entries(data).forEach(([key, value]) => {
+        formDataParams.append(key, value as string);
+      });
+
+      await fetch(SCRIPT_URL, {
         method: 'POST',
-        mode: 'no-cors', // Apps Script requires no-cors for simple redirects
+        mode: 'no-cors',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: JSON.stringify(data),
+        body: formDataParams.toString(),
       });
 
       setIsSubmitted(true);
@@ -73,6 +78,7 @@ export default function LeadCapture() {
                 src="/thumbnails/get-top-dollars.png"
                 alt="Get Top Dollars"
                 fill
+                sizes="(max-width: 768px) 288px, (max-width: 1024px) 320px, 400px"
                 className="object-contain"
                 referrerPolicy="no-referrer"
               />

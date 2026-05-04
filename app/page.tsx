@@ -13,6 +13,9 @@ import FeaturedSpotlight from '@/components/FeaturedSpotlight';
 import LeadCapture from '@/components/LeadCapture';
 import Footer from '@/components/Footer';
 import { AchievementBanner } from "@/components/achievement-banner";
+import TikTokLive from '@/components/TikTokLive';
+import InstagramLive from '@/components/InstagramLive';
+import GoogleReviewsLive from '@/components/GoogleReviewsLive';
 
   export default function Home() {
   return (
@@ -23,6 +26,9 @@ import { AchievementBanner } from "@/components/achievement-banner";
       <Performance />
       <EliteAccolades />
       <SocialShowcase />
+      <TikTokLive />
+      <InstagramLive />
+      <GoogleReviewsLive />
       {/* <LogosSlider /> */}
       <Neighborhoods />
       <Testimonials />

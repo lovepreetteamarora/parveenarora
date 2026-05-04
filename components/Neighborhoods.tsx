@@ -7,18 +7,18 @@ import Link from 'next/link';
 const regions = [
   {
     name: 'Brampton',
-    specialty: 'Credit Valley',
-    description: 'Specializing in high-demand residential areas with top-tier schooling and rapid community development.',
+    specialty: 'Castlemore & Credit Valley',
+    description: 'Specializing in luxury estates and high-demand residential areas like Springdale with top-tier schooling and rapid development.',
     image: '/thumbnails/brampton.jpg',
     stats: 'Highest Sales Volume',
     link: 'https://www.teamarora.com/house-for-sale-in-brampton/',
   },
   {
     name: 'Mississauga',
-    specialty: 'East Credit',
-    description: 'Expertise in luxury homes and prime accessible locations. Recognized as a Best Real Estate Agent in Mississauga.',
+    specialty: 'East Credit & Lorne Park',
+    description: 'Expertise in high-value luxury homes and prime accessible locations. Recognized as a Best Real Estate Agent in Mississauga.',
     image: '/thumbnails/mississauga.jpg',
-    stats: 'Top Rated Agent 2023',
+    stats: 'Top Rated Agent 2024',
     link: 'https://www.teamarora.com/homes-for-sale-mississauga/',
   },
   {
@@ -48,9 +48,9 @@ export default function Neighborhoods() {
             <MapPin className="text-[#E01A2C] w-5 h-5" />
             <span className="text-[#E01A2C] font-bold tracking-wider uppercase text-sm">Target Communities</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-serif text-slate-900 mb-4">Featured Neighborhoods</h2>
+          <h2 className="text-4xl md:text-5xl font-serif text-slate-900 mb-4">Prime Brampton Real Estate</h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Leveraging deep market insights to secure the best opportunities in the most sought-after Peel Region communities.
+            As the #1 Realtor in Brampton, Parveen Arora leverages deep market insights to secure the best opportunities across the Peel Region and the GTA.
           </p>
         </div>
 
@@ -69,6 +69,7 @@ export default function Neighborhoods() {
                   src={region.image}
                   alt={region.name}
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   referrerPolicy="no-referrer"
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />

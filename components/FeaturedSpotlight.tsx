@@ -32,11 +32,16 @@ export default function FeaturedSpotlight() {
         return;
       }
 
+      const formDataParams = new URLSearchParams();
+      Object.entries(data).forEach(([key, value]) => {
+        formDataParams.append(key, value as string);
+      });
+
       await fetch(SCRIPT_URL, {
         method: 'POST',
         mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: formDataParams.toString(),
       });
 
       setIsSubmitted(true);

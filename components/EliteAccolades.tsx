@@ -70,6 +70,7 @@ export default function EliteAccolades() {
                       src={award.src}
                       alt={award.name}
                       fill
+                      sizes="(max-width: 768px) 160px, 192px"
                       className={`object-contain transition-all duration-700 ${
                         award.isSVG 
                           ? 'brightness-0 invert-[18%] sepia-[85%] saturate-[3015%] hue-rotate(211deg) brightness(95%) contrast(106%) opacity-90 group-hover/award:opacity-100' 

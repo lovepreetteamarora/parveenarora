@@ -30,6 +30,7 @@ export default function Awards() {
                  src="/elements.png" 
                  alt="Team Arora Awards" 
                  fill 
+                 sizes="(max-width: 1200px) 100vw, 1200px"
                  className="object-contain" 
                  referrerPolicy="no-referrer" 
                  unoptimized

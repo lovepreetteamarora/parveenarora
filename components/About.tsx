@@ -6,10 +6,10 @@ import { HeroVideoDialog } from '@/components/ui/hero-video-dialog';
 
 export default function About() {
   const highlights = [
+    'RE/MAX Luminary of Distinction (2024)',
     '#1 RE/MAX Team in Canada (2018)*',
-    'Team of 45+ Full-Time Real Estate Experts',
-    'Fluency in 10+ Different Languages',
-    'Deep Market Insight in Brampton & Mississauga',
+    'Platinum VIP Access to Top Builders',
+    'Licensed in Ontario & New Brunswick',
   ];
 
   return (
@@ -41,12 +41,12 @@ export default function About() {
               <div className="h-px w-12 bg-[#E01A2C]"></div>
               <span className="text-[#E01A2C] font-bold tracking-[0.3em] uppercase text-[10px]">Institutional Authority</span>
             </div>
-            <h2 className="text-5xl md:text-7xl font-serif text-slate-900 mb-8 leading-[1.1] tracking-tight">
-              Brampton's <span className="text-[#E01A2C] italic">Top Realtor.</span> <br />
-              <span className="text-slate-500 font-medium text-3xl md:text-5xl leading-tight">Broker of Record & <br />Market Strategist.</span>
-            </h2>
+            <h1 className="text-5xl md:text-7xl font-serif text-slate-900 mb-8 leading-[1.1] tracking-tight">
+              Brampton's <span className="text-[#E01A2C] italic">#1 Realtor.</span> <br />
+              <span className="text-slate-500 font-medium text-3xl md:text-5xl leading-tight">Broker of Record & <br />Top Real Estate Expert.</span>
+            </h1>
             <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-xl font-light">
-              As the <strong className="font-bold text-slate-900">Broker of Record for RE/MAX Optimum Realty</strong> and the recognized #1 Real Estate Agent in Brampton, Parveen Arora has architected a dominant institutional presence across the <span className="text-[#000000] font-medium">Peel Region and the GTA</span>. With a career spanning over two decades and 4,500+ successful transactions, Parveen delivers unmatched expertise in residential family homes, high-yield pre-construction investments, and sophisticated commercial property strategies.
+              As the <strong className="font-bold text-slate-900">Broker of Record for RE/MAX Optimum Realty</strong> and the recognized #1 Real Estate Agent in Brampton, Parveen Arora has architected a dominant institutional presence across the <span className="text-[#000000] font-medium">GTA and Atlantic Canada</span>. With a career spanning over two decades and 5,000+ successful transactions, Parveen delivers unmatched expertise in residential resale and high-yield <span className="text-[#E01A2C] font-semibold">Platinum VIP Pre-Construction</span> investments with industry leaders like <strong className="text-slate-900">Mattamy, Daniels, and Tridel</strong>.
             </p>
             <div className="mb-12">
                <p className="font-signature text-6xl text-[#000000] -rotate-2 origin-left opacity-80">Parveen Arora</p>

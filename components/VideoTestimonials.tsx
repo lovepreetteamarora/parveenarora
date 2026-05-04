@@ -115,6 +115,7 @@ export default function VideoTestimonials() {
                   src={testimonial.thumbnail}
                   alt={`Video from ${testimonial.client}`}
                   fill
+                  sizes="(max-width: 768px) 80vw, 380px"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
                 />

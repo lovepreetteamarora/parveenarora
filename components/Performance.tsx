@@ -39,7 +39,7 @@ export default function Performance() {
           <BorderBeam duration={12} lightColor="#E01A2C" lightWidth={1200} borderWidth={1} />
           
           <div className="text-center group">
-            <p className="text-4xl md:text-5xl font-sans font-bold text-slate-900 mb-1 tracking-tighter group-hover:scale-105 transition-transform duration-500">4500+</p>
+            <p className="text-4xl md:text-5xl font-sans font-bold text-slate-900 mb-1 tracking-tighter group-hover:scale-105 transition-transform duration-500">5000+</p>
             <p className="text-[10px] font-bold text-slate-500 uppercase tracking-[0.3em]">Lifetime Transactions</p>
           </div>
           <div className="hidden md:block h-10 w-px bg-slate-200"></div>
@@ -69,13 +69,14 @@ export default function Performance() {
                 <BorderBeam duration={5} lightColor="#000000" lightWidth={600} borderWidth={4} />
                 
                 <div className="relative w-full h-16 mb-4">
-                   <Image 
-                     src="/thumbnails/google-review.png" 
-                     alt="Google Reviews" 
-                     fill 
-                     className="object-contain"
-                     referrerPolicy="no-referrer"
-                   />
+                    <Image 
+                      src="/thumbnails/google-review.png" 
+                      alt="Parveen Arora - Google Reviews #1 Realtor Brampton" 
+                      fill 
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                      className="object-contain"
+                      referrerPolicy="no-referrer"
+                    />
                 </div>
                 <div className="text-center w-full">
                   <p className="text-3xl font-sans font-black text-slate-900 mb-1 leading-none tracking-tighter">418+</p>
@@ -114,8 +115,9 @@ export default function Performance() {
                 <div className="relative w-full h-20 mb-6">
                   <Image 
                     src="/thumbnails/rank-my-agent.png" 
-                    alt="Rank My Agent" 
+                    alt="Rank My Agent - Top Rated Real Estate Agent Brampton" 
                     fill 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="object-contain"
                     referrerPolicy="no-referrer"
                   />
@@ -147,8 +149,9 @@ export default function Performance() {
                 <div className="relative w-full h-20 mb-6">
                   <Image 
                     src="/rate-agent-badhe.svg" 
-                    alt="Verified Excellence" 
+                    alt="Parveen Arora - Verified Achievement Award" 
                     fill 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="object-contain"
                   />
                 </div>
@@ -179,8 +182,9 @@ export default function Performance() {
                 <div className="relative w-full h-16 mb-4">
                   <Image 
                     src="/thumbnails/facebook-rating.png" 
-                    alt="Facebook Rating" 
+                    alt="Parveen Arora - 5 Star Facebook Rating" 
                     fill 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="object-contain"
                     referrerPolicy="no-referrer"
                     unoptimized

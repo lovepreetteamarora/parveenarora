@@ -8,12 +8,12 @@ const bannerImages = [
   {
     id: 1,
     src: "/thumbnails/banner-1.png",
-    alt: "Parveen Arora - 20 Years in the Business"
+    alt: "Parveen Arora - #1 Realtor in Brampton with 20+ Years Experience"
   },
   {
     id: 2,
     src: "/thumbnails/banner-2.jpg",
-    alt: "Parveen Arora - 4500+ Transactions"
+    alt: "Parveen Arora - Top Real Estate Broker with 5000+ Transactions"
   }
 ];
 
@@ -54,6 +54,7 @@ export default function Hero() {
               src={bannerImages[currentIndex].src}
               alt={bannerImages[currentIndex].alt}
               fill
+              sizes="100vw"
               className="object-cover md:object-contain object-center bg-slate-50"
               priority
               referrerPolicy="no-referrer"
@@ -129,6 +130,7 @@ export default function Hero() {
                 src={`https://picsum.photos/seed/face${i}/100/100`} 
                 alt="Digital Community Member" 
                 fill
+                sizes="48px"
                 className="object-cover"
               />
             </div>

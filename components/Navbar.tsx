@@ -39,6 +39,7 @@ export default function Navbar() {
                   src={'/blacklogo.png'} 
                   alt="Team Arora Logo" 
                   fill 
+                  sizes="(max-width: 768px) 160px, 224px"
                   className="object-contain object-left"
                   priority
               />

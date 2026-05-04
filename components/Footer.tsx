@@ -13,12 +13,13 @@ export default function Footer() {
                   src="/blacklogo.png" 
                   alt="Team Arora Logo" 
                   fill 
+                  sizes="192px"
                   className="object-contain object-left" 
                 />
               </div>
             </div>
             <p className="text-sm text-slate-600 mb-6 leading-relaxed">
-              Independently Owned and Operated Brokerage. The clear choice for top-performing real estate strategies in the Peel Region.
+              Parveen Arora is the #1 Realtor in Brampton and Mississauga, leading a team of experts at RE/MAX Optimum Realty. Independently Owned and Operated Brokerage.
             </p>
           </div>
 
