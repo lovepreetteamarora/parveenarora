@@ -7,12 +7,12 @@ import { Mail, Phone, ChevronLeft, ChevronRight } from 'lucide-react';
 const bannerImages = [
   {
     id: 1,
-    src: "https://www.teamarora.com/wp-content/uploads/2025/08/20-years.png",
+    src: "/thumbnails/banner-1.png",
     alt: "Parveen Arora - 20 Years in the Business"
   },
   {
     id: 2,
-    src: "https://www.teamarora.com/wp-content/uploads/2026/01/4500-TransactionS-Banner.jpg.jpeg",
+    src: "/thumbnails/banner-2.jpg",
     alt: "Parveen Arora - 4500+ Transactions"
   }
 ];

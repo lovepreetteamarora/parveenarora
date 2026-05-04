@@ -1,11 +1,40 @@
 'use client';
 import { motion } from 'motion/react';
+import Image from 'next/image';
 import { BorderBeam } from './ui/border-beam';
-import { ParamountAward } from './ui/ParamountAward';
-import { LuminaryAward } from './ui/LuminaryAward';
-import { LifetimeAward } from './ui/LifetimeAward';
-import { HallOfFameAward } from './ui/HallOfFameAward';
-import { CircleOfLegendsAward } from './ui/CircleOfLegendsAward';
+
+const AWARDS = [
+  {
+    name: "Luminary",
+    src: "/Awards/2_Circle-of-Legends_logo_white.svg", // Fixed: file 2 contains Luminary logo
+    isSVG: true
+  },
+  {
+    name: "Circle of Legends",
+    src: "/Awards/1_Luminary_logo_white.svg", // Fixed: file 1 contains Circle of Legends logo
+    isSVG: true
+  },
+  {
+    name: "Lifetime Achievement",
+    src: "/Awards/4_Hall-of-Fame_logo_white.svg", // Fixed: file 4 contains Lifetime Achievement logo
+    isSVG: true
+  },
+  {
+    name: "Hall of Fame",
+    src: "/Awards/3_Lifetime_logo_white.svg", // Fixed: file 3 contains Hall of Fame logo
+    isSVG: true
+  },
+  {
+    name: "Pinnacle Club Team",
+    src: "/Awards/5_Awards_Club_logos_navy_Pinnacle_Club_Team.png",
+    isSVG: false
+  },
+  {
+    name: "Diamond Club Team",
+    src: "/Awards/6_Awards_Club_logos_navy_Diamond_Club_Team.png",
+    isSVG: false
+  },
+];
 
 export default function EliteAccolades() {
   return (
@@ -34,57 +63,26 @@ export default function EliteAccolades() {
             <BorderBeam duration={15} lightColor="#E01A2C" lightWidth={800} borderWidth={1} />
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-12 items-center justify-items-center">
-              {/* Paramount */}
-              <div className="relative group/award cursor-help text-center">
-                <div className="w-40 h-40 md:w-48 md:h-48 relative mb-4 transition-all duration-700 group-hover/award:scale-110 group-hover/award:drop-shadow-[0_0_30px_rgba(224,26,44,0.15)]">
-                  <ParamountAward className="w-full h-full text-slate-800 transition-colors duration-700 group-hover/award:text-[#E01A2C]" />
+              {AWARDS.map((award, index) => (
+                <div key={index} className="relative group/award cursor-help text-center flex flex-col items-center w-full">
+                  <div className="w-40 h-40 md:w-48 md:h-48 relative mb-4 transition-all duration-700 group-hover/award:scale-110 group-hover/award:drop-shadow-[0_0_30px_rgba(224,26,44,0.1)]">
+                    <Image 
+                      src={award.src}
+                      alt={award.name}
+                      fill
+                      className={`object-contain transition-all duration-700 ${
+                        award.isSVG 
+                          ? 'brightness-0 invert-[18%] sepia-[85%] saturate-[3015%] hue-rotate(211deg) brightness(95%) contrast(106%) opacity-90 group-hover/award:opacity-100' 
+                          : 'opacity-100'
+                      }`}
+                      priority={index < 3}
+                    />
+                  </div>
+                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.4em] opacity-0 group-hover/award:opacity-100 transition-all duration-500 translate-y-2 group-hover/award:translate-y-0">
+                    {award.name}
+                  </p>
                 </div>
-                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.4em] opacity-0 group-hover/award:opacity-100 transition-all duration-500 translate-y-2 group-hover/award:translate-y-0">Paramount</p>
-              </div>
-
-              {/* Luminary */}
-              <div className="relative group/award cursor-help text-center">
-                <div className="w-40 h-40 md:w-48 md:h-48 relative mb-4 transition-all duration-700 group-hover/award:scale-110 group-hover/award:drop-shadow-[0_0_30px_rgba(224,26,44,0.15)]">
-                  <LuminaryAward className="w-full h-full text-slate-800 transition-colors duration-700 group-hover/award:text-[#E01A2C]" />
-                </div>
-                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.4em] opacity-0 group-hover/award:opacity-100 transition-all duration-500 translate-y-2 group-hover/award:translate-y-0">Luminary</p>
-              </div>
-
-              {/* Lifetime Achievement */}
-              <div className="relative group/award cursor-help text-center">
-                <div className="w-40 h-40 md:w-48 md:h-48 relative mb-4 transition-all duration-700 group-hover/award:scale-110 group-hover/award:drop-shadow-[0_0_30px_rgba(224,26,44,0.15)]">
-                  <LifetimeAward className="w-full h-full text-slate-800 transition-colors duration-700 group-hover/award:text-[#E01A2C]" />
-                </div>
-                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.4em] opacity-0 group-hover/award:opacity-100 transition-all duration-500 translate-y-2 group-hover/award:translate-y-0">Lifetime</p>
-              </div>
-
-              {/* Hall of Fame */}
-              <div className="relative group/award cursor-help text-center">
-                <div className="w-40 h-40 md:w-48 md:h-48 relative mb-4 transition-all duration-700 group-hover/award:scale-110 group-hover/award:drop-shadow-[0_0_30px_rgba(224,26,44,0.15)]">
-                  <HallOfFameAward className="w-full h-full text-slate-800 transition-colors duration-700 group-hover/award:text-[#E01A2C]" />
-                </div>
-                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.4em] opacity-0 group-hover/award:opacity-100 transition-all duration-500 translate-y-2 group-hover/award:translate-y-0">Hall of Fame</p>
-              </div>
-
-              {/* Circle of Legends */}
-              <div className="relative group/award cursor-help text-center">
-                <div className="w-40 h-40 md:w-48 md:h-48 relative mb-4 transition-all duration-700 group-hover/award:scale-110 group-hover/award:drop-shadow-[0_0_30px_rgba(224,26,44,0.15)]">
-                  <CircleOfLegendsAward className="w-full h-full text-slate-800 transition-colors duration-700 group-hover/award:text-[#E01A2C]" />
-                </div>
-                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.4em] opacity-0 group-hover/award:opacity-100 transition-all duration-500 translate-y-2 group-hover/award:translate-y-0">Circle of Legends</p>
-              </div>
-
-              {/* Chairman's */}
-              <div className="relative group/award cursor-help text-center">
-                <div className="w-40 h-40 md:w-48 md:h-48 relative mb-4 transition-all duration-700 group-hover/award:scale-110 group-hover/award:drop-shadow-[0_0_30px_rgba(224,26,44,0.15)]">
-                  <img 
-                    src="/Awards_Club_logos_navy_Chairmans_Club_Team.png" 
-                    alt="RE/MAX Chairman's Club" 
-                    className="w-full h-full object-contain opacity-80 group-hover/award:opacity-100 transition-all duration-700 mix-blend-multiply"
-                  />
-                </div>
-                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.4em] opacity-0 group-hover/award:opacity-100 transition-all duration-500 translate-y-2 group-hover/award:translate-y-0">Chairman's Club</p>
-              </div>
+              ))}
             </div>
           </div>
         </motion.div>

@@ -11,7 +11,7 @@ const reviews = [
     text: "We had an outstanding experience working with Parveen Arora, who is truly one of the top real estate agents in Mississauga. He expertly guided us through the successful sale of our home, making the entire process seamless, efficient, and stress-free.",
     author: "Aisha Khan",
     location: "Mississauga",
-    image: "https://www.teamarora.com/wp-content/themes/team-arora/images/client-1.jpg"
+    image: "/thumbnails/client-1.jpg"
   },
   {
     platform: 'Google Reviews',
@@ -19,7 +19,7 @@ const reviews = [
     text: "Excellent experience working with Naval Arora and Parveen Arora. From the very beginning, they were incredibly patient and dedicated, truly understanding our needs. Their expertise and advice were invaluable.",
     author: "Pradeep Vijay",
     location: "Brampton",
-    image: "https://www.teamarora.com/wp-content/themes/team-arora/images/teamarora_client2.jpg"
+    image: "/thumbnails/client-2.jpg"
   },
   {
     platform: 'RankMyAgent',
@@ -27,7 +27,7 @@ const reviews = [
     text: "Parveen provided immense support that went far beyond just closing the sale. His deep market insight in Credit Valley gave us complete confidence.",
     author: "Amrit S.",
     location: "Credit Valley",
-    image: "https://www.teamarora.com/wp-content/themes/team-arora/images/client-3.jpg"
+    image: "/thumbnails/client-3.jpg"
   },
   {
     platform: 'Google Reviews',
@@ -35,7 +35,7 @@ const reviews = [
     text: "We recently sold our home in Cambridge and had an excellent experience. Parveen Arora and his team are dedicated, results-driven professionals who truly understand the local market.",
     author: "Charan Kaur",
     location: "Cambridge",
-    image: "https://www.teamarora.com/wp-content/themes/team-arora/images/client-4.jpg"
+    image: "/thumbnails/client-4.jpg"
   },
   {
     platform: 'Rate-My-Agent',
@@ -43,7 +43,7 @@ const reviews = [
     text: "100% recommend! His aggressive and proactive strategies got our house sold above asking, and his home staging advice was absolutely spot on.",
     author: "Jessica M.",
     location: "East Credit",
-    image: "https://www.teamarora.com/wp-content/uploads/2022/08/client-review.jpg"
+    image: "/thumbnails/client-5.jpg"
   }
 ];
 

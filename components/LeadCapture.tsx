@@ -19,7 +19,7 @@ export default function LeadCapture() {
         >
            <div className="relative w-72 h-72 md:w-80 md:h-80">
               <Image 
-                src="https://www.teamarora.com/wp-content/themes/team-arora/images/get-top-dollars.png"
+                src="/thumbnails/get-top-dollars.png"
                 alt="Get Top Dollars"
                 fill
                 className="object-contain"

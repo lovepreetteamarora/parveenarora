@@ -7,7 +7,7 @@ import { BorderBeam } from './ui/border-beam';
 
 export default function Performance() {
   return (
-    <section id="performance" className="py-24 bg-gradient-to-b from-slate-50 via-white to-slate-50 relative overflow-hidden border-t border-slate-200">
+    <section id="performance" className="pb-24 pt-12 bg-gradient-to-b from-slate-50 via-white to-slate-50 relative overflow-hidden border-t border-slate-200">
       {/* Decorative Background Elements - Subtle & Atmospheric */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full opacity-10 pointer-events-none">
         <p className="text-[18vw] font-sans font-black text-slate-900 leading-none tracking-tighter text-center mt-20 opacity-[0.03] uppercase select-none">
@@ -70,7 +70,7 @@ export default function Performance() {
                 
                 <div className="relative w-full h-16 mb-4">
                    <Image 
-                     src="https://www.teamarora.com/wp-content/themes/team-arora/images/google-review.png" 
+                     src="/thumbnails/google-review.png" 
                      alt="Google Reviews" 
                      fill 
                      className="object-contain"
@@ -113,8 +113,8 @@ export default function Performance() {
                 
                 <div className="relative w-full h-20 mb-6">
                   <Image 
-                    src="https://www.teamarora.com/wp-content/themes/team-arora/images/rank-my-agent-badge_2023.png" 
-                    alt="Rate My Agent" 
+                    src="/thumbnails/rank-my-agent.png" 
+                    alt="Rank My Agent" 
                     fill 
                     className="object-contain"
                     referrerPolicy="no-referrer"
@@ -178,7 +178,7 @@ export default function Performance() {
                 
                 <div className="relative w-full h-16 mb-4">
                   <Image 
-                    src="https://www.teamarora.com/wp-content/themes/team-arora/images/facebook-rating.png" 
+                    src="/thumbnails/facebook-rating.png" 
                     alt="Facebook Rating" 
                     fill 
                     className="object-contain"

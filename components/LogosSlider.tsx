@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import { InfiniteSlider } from '@/components/ui/infinite-slider';
 import { ProgressiveBlur } from '@/components/ui/progressive-blur';
 
@@ -6,37 +7,31 @@ const logos = [
   {
     id: "logo-1",
     description: "RE/MAX Global",
-    image: "https://www.remax.ca/assets/images/remax-logo.svg",
-    className: "h-8 w-auto grayscale invert brightness-200 opacity-60 hover:opacity-100 transition-all",
+    image: "/thumbnails/remax-balloon.png",
+    className: "h-12 w-auto grayscale invert brightness-200 opacity-60 hover:opacity-100 transition-all",
   },
   {
     id: "logo-2",
     description: "Figma",
-    image: "https://www.shadcnblocks.com/images/block/logos/figma.svg",
+    image: "/thumbnails/figma.svg",
     className: "h-7 w-auto grayscale invert opacity-60 hover:opacity-100 transition-all",
   },
   {
     id: "logo-3",
     description: "Next.js",
-    image: "https://www.shadcnblocks.com/images/block/logos/nextjs.svg",
+    image: "/thumbnails/nextjs.svg",
     className: "h-7 w-auto grayscale invert opacity-60 hover:opacity-100 transition-all",
-  },
-  {
-    id: "logo-4",
-    description: "Toronto Real Estate Board",
-    image: "https://www.trreb.ca/index.php/images/logo.png",
-    className: "h-10 w-auto grayscale invert opacity-60 hover:opacity-100 transition-all",
   },
   {
     id: "logo-6",
     description: "Supabase",
-    image: "https://www.shadcnblocks.com/images/block/logos/supabase.svg",
+    image: "/thumbnails/supabase.svg",
     className: "h-7 w-auto grayscale invert opacity-60 hover:opacity-100 transition-all",
   },
   {
     id: "logo-8",
     description: "Vercel",
-    image: "https://www.shadcnblocks.com/images/block/logos/vercel.svg",
+    image: "/thumbnails/vercel.svg",
     className: "h-7 w-auto grayscale invert opacity-60 hover:opacity-100 transition-all",
   },
 ];
@@ -59,10 +54,13 @@ export function LogosSlider() {
               key={logo.id} 
               className='flex w-48 items-center justify-center'
             >
-              <img
+              <Image
                 src={logo.image}
                 alt={logo.description}
+                width={192}
+                height={48}
                 className={logo.className}
+                unoptimized={logo.image.endsWith('.svg')}
               />
             </div>
           ))}

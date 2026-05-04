@@ -12,7 +12,7 @@ const socialPosts = [
     embedUrl: 'https://www.tiktok.com/embed/v2/7531379367402949893',
     title: '7 AM TO 7 PM Schedule',
     views: '329K',
-    thumbnail: 'https://p16-common-sign.tiktokcdn.com/tos-maliva-p-0068/oA8VQCAWoQVf8jCgQMICPsQaJeqLM8fCS1pRYJ~tplv-tiktokx-origin.image?dr=14575&x-expires=1777258800&x-signature=7fgFkAtqU9Zkty9XI%2B2qg6rNDhE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2'
+    thumbnail: '/thumbnails/social-1.png'
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const socialPosts = [
     embedUrl: 'https://www.instagram.com/reel/C8CwwryuIIc/embed',
     title: 'Buy Property Today',
     views: '2.6M',
-    thumbnail: 'https://scontent.cdninstagram.com/v/t51.71878-15/503201552_1238621874285164_4617181128764979034_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=7u8g5_gBHpcQ7kNvwE37SYd&_nc_oc=AdoRn1OmFw6I6oVYyxkfli9ojxEqdkXu9zySW7pM2PwjTir9K0Yr3RTJ5evVYFSp9Rjvz_QXJCFg5fbc57BZILEg&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=gJhHgI5PlR4L-7KIGokv1g&oh=00_Af2jQW8MAZ7LUNCUYVLcm7dMI32KJXRrzgvIwp-0xC8xrQ&oe=69F2045B'
+    thumbnail: '/thumbnails/social-2.png'
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const socialPosts = [
     embedUrl: 'https://www.tiktok.com/embed/v2/7519539915160292614',
     title: 'Real Estate Developer Insights',
     views: '112K',
-    thumbnail: 'https://p16-common-sign.tiktokcdn.com/tos-maliva-p-0068/oYBIkIxYoALigr7aIifRW0BA19L7giCqbuIFAa~tplv-tiktokx-origin.image?dr=14575&x-expires=1777258800&x-signature=tWix%2FkTHymjPu6xWmMqZ9rOYdis%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2'
+    thumbnail: '/thumbnails/social-3.png'
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const socialPosts = [
     embedUrl: 'https://www.instagram.com/reel/DXFlmpiTQDz/embed',
     title: 'Luxury Property Excellence',
     views: '8.2K',
-    thumbnail: 'https://scontent.cdninstagram.com/v/t51.82787-15/670293835_17944165248169726_8630308339022207690_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=dE4QqvLdnrIQ7kNvwHg3riI&_nc_oc=AdpXC_J0pst8CkdmqrJFN1Xpj6L4dg62EckfHRkjJh-VY_JjAxfvvXKi7AvPV86EozVIQaU3iAXNJeOoaDUpEAz0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=JaaLT4K7EIn6V1cuywiY-w&oh=00_Af1-p05HHgQmcJ58zisTzGKD7cYX5kTPdATHOIbl0uPsxw&oe=69F20D79'
+    thumbnail: '/thumbnails/social-4.png'
   }
 ];
 
