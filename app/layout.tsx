@@ -134,7 +134,7 @@ export const metadata: Metadata = {
     canonical: 'https://parveenarora.com',
   },
   verification: {
-    google: 'P4gyLblFJzZvNfKm_2jOmH_gMgMW68NQxu0IzPvhiMs',
+    google: 'x4dGtgk00wzHvp1zeVbEcNVbTGX00DTAuy4Pjoj-I1k',
   },
 };
 
