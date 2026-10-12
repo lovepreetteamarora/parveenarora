@@ -133,6 +133,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://parveenarora.com',
   },
+  verification: {
+    google: 'P4gyLblFJzZvNfKm_2jOmH_gMgMW68NQxu0IzPvhiMs',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
